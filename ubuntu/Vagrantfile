@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+
+# esse número 2 dentro das aspas indica a versão da sintaxe do Vagrantfile
+# log em seguida ele vai fazer um bloco de configuração
+# Em Ruby, do e end delimitam um bloco de código.
+#do - inicia o bloco
+#config| - parâmetro passado para o bloco (como uma variável local)
+#end
+# vb é o nome que voi dado a ela, mas poderia ser qualquer outro nome
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/bionic64"
+  config.vm.provider "virtualbox" do |vb|  # um bloco de código para configurar o provedor
+    vb.memory = 1024  # quantidade de memória RAM
+    vb.cpus = 2      # quantidade de CPUs
+  end
+end
