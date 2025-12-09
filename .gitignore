@@ -1,1 +1,7 @@
-
+# Vagrant  
+.vagrant/  
+*.box  
+  
+# OS  
+.DS_Store  
+Thumbs.db 
