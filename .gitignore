@@ -1,0 +1,24 @@
+# Vagrant
+.vagrant/
+*.log
+
+# VirtualBox
+*.vbox
+*.vbox-prev
+*.vdi
+
+# SSH Keys
+*.key
+*.pem
+id_rsa*
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Backup files
+*.bak
+*.backup
